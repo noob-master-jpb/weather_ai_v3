@@ -55,8 +55,3 @@ for i in range(len(test_y)):
 print(f'Accuracy: {correct/total:.2f} ({correct}/{total})')
 print(f'True Positives: {true_pos}({true_pos/total:.2f}), True Negatives: {true_neg}({true_neg/total:.2f})')
 print(f'False Positives: {false_pos}({false_pos/total:.2f}), False Negatives: {false_neg}({false_neg/total:.2f})')
-
-sample = pd.DataFrame([[28, 83, 1002, 90]], columns=cols)  # note: 1004, not 10004
-dat = scaler.transform(sample)
-print(dat[0])
-print(model.predict(dat))
